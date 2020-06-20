@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="content-area">
+        <canvas class="line-chart"></canvas>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+        <script>
+            var ctx = document.getElementsByClassName('line-chart');
+
+            var chartGraph = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ["jan", "Fev", "Mar", "Abr", "Mai", "Jun"],
+                    datasets: [{
+                        label: "TAXA DE CLIQUES - 2019",
+                        data: [5, 10, 5, 14, 20, 15],
+                        borderWidth: 6,
+                        borderColor: 'rgba(77, 166, 253, 0.85)',
+                        backgroundColor: 'transparent'
+                    }]
+                },
+                options: {
+                    title: {
+                        display: true,
+                        fontSize: 20,
+                        text: "RELATORIO"
+                    },
+                },
+            });
+
+
+        </script>
+    </div>
+</body>
+</html>

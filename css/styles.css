@@ -1,0 +1,15 @@
+* {
+    padding: 10px;
+    margin: 10px;
+}
+
+body {
+    background-color: #32a88f;
+}
+
+.content-area {
+    display: flex;
+    background-color: white;
+    margin-top: 30px;
+    justify-content: center;
+}
